@@ -29,7 +29,7 @@
     }
   },
   "plugin": [
-    "oh-my-opencode@latest",
+    "oh-my-openagent@latest",
     "opencode-antigravity-auth@beta",
     "@tarquinen/opencode-dcp@latest"
   ],
@@ -194,6 +194,9 @@
         }
       }
     }
+  },
+  "permission": {
+    "look_at": "deny"
   },
   "$schema": "https://opencode.ai/config.json"
 }
