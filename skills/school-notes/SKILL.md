@@ -8,7 +8,9 @@ description: Knows the exact location and contents of all Peter's school notes, 
 All notes live in one Obsidian vault root: `/var/home/peter/Documents/Obsidian_vaults/`
 Each course is its own **nested Obsidian vault** (own `.obsidian/` config). Ignore `.obsidian/`, `copilot/`, `.debris/`, `.directory`, `.megaignore`, `OLD.zip` (117MB backup), `a.zip` (31MB), `.venv` at root.
 
-## Directory map (authoritative, verified 2026-08-09)
+## Directory map (authoritative, verified 2026-08-11)
+
+> 📐 Each course vault has a **`Style Guide.md`** at its root documenting the `W{week}L{n}` (lecture) / `W{week}R{n}` (reading) naming convention + week-folder structure. Consult it before navigating or adding files.
 
 | Course | Path | Contents |
 |---|---|---|
@@ -20,26 +22,30 @@ Each course is its own **nested Obsidian vault** (own `.obsidian/` config). Igno
 
 ## What's inside each vault
 
-### 701_vault — COMPSCI 701
-- `Assignment 1.md` (marking rubric: functionality/OO design/maintainability/report), `Assignment 1 readme.md`
-- Lecture notes: `701 Lecture 2.3 Testability.md`, `701 Lecture 3.1 + 3.2 Naming.md`
-- Lecture PDFs: `compsci701-2026-lect02.2-alterability.pdf`, `lect02.3-testability.pdf`, `lect03.1-naming.pdf`, `lect03.2-naming-research.pdf`
-- `2026-07-31.md` (daily note), `Pasted image 20260804095001.png`
+### 701_vault — COMPSCI 701 (organised **by week**; assignments + daily notes at root)
+- Root: `Assignment 1.md` (marking rubric: functionality/OO design/maintainability/report), `Assignment 1 readme.md`, `2026-07-31.md` (daily note)
+- **`Week 2/`** — `W2L2 Alterability.pdf`, `W2L3 Testability.md` + `.pdf`
+- **`Week 3/`** — `W3L1-2 Naming.md`, `W3L1 Naming.pdf`, `W3L2 Naming Research.pdf`, `Pasted image 20260804095001.png`
+- **`Week 4/`** — `W4L1.md`, `W4L1 Guidelines.pdf` (+ `.annot.json`)
+- Naming convention: `W{week}L{lecture}` (e.g. `W2L3` = week 2 lecture 3), `W{week}R{n}` for readings
 
-### 705_vault — COMPSCI 705 (notes in `COMPSCI 705/` subfolder)
-- `Week 1.md` (Oulasvirta & Hornbæk research problem types: empirical/conceptual/constructive), `Week 2.md`, `Week 3.md`
-- `Reading 1.md`, `Week 3 reading.md` (Ioannidis "Why Most Published Research Findings Are False"), plus `Week 3 reading Ioannidis_(2005)...pdf` and Wikipedia HTML copy
-- `Wk2ExperimentDesignX02.pdf`, `Week3slides1.pdf`, `Wiki Style.md` (note style guide)
+### 705_vault — COMPSCI 705 (notes in `COMPSCI 705/` subfolder, organised **by week**)
+- `Wiki Style.md` (note style guide) sits at the `COMPSCI 705/` root
+- **`Week 1/`** — `Week 1.md` (Oulasvirta & Hornbæk research problem types: empirical/conceptual/constructive), `Reading 1.md`
+- **`Week 2/`** — `Week 2.md`, `Wk2ExperimentDesignX02.pdf`
+- **`Week 3/`** — `Week 3.md`, `Week 3 reading.md` (Ioannidis "Why Most Published Research Findings Are False"), `Week 3 reading Ioannidis_(2005)...pdf`, Wikipedia HTML copy, `Week3slides1.pdf`
+- **`Week 4/`** — `Week 4 reading.md` (HUB: Stefanidi et al. "Literature Reviews in HCI: A Review of Reviews", CHI '23), parts `Week 4 reading 1 - Overview` → `Week 4 reading 8 - Conclusion and Key Takeaways` (Obsidian-wikilinked cluster), `Week 4 Reading.pdf`
 
-### 742_vault — COMPSCI 742
-- `Week 1.md`, `Week 2.md`, `Assignment 1.md`
-- `Week 2.1 - Internet_Measurements_Supplementary.pdf` (+ `.annot.json` PDF annotation), `Week 2.2 - WebWorkloadCharacterization.pdf`
+### 742_vault — COMPSCI 742 (organised **by week**)
+- Root: `Assignment 1.md`
+- **`Week 1/`** — `Week 1.md`
+- **`Week 2/`** — `Week 2.md`, `W2L1 Internet Measurements Supplementary.pdf` (+ `.annot.json`), `W2L2 WebWorkloadCharacterization.pdf`
 
-### 760_vault — COMPSCI 760
-- `Pitch Idea.md` — ML-driven CPU scheduling optimizer (SimPy simulation, feature extraction, algorithm choice: SJF/RR/SRTF)
-- `Pitch script.md`
-- Week 3 adversarial ML: `W3L1 Adversarial Learning - Pre-lecture Notes.md`, `W3L1 Adversarial learning.md`, `W3L2 Poisoning attack.md`, `W3L3.md` (empty as of 2026-08-09)
-- Lecture PDFs: `W3L1_Lecture1_AdversarialLearning.pdf`, `W3L2_Lecture2_PoisoningAttacks.pdf`, `W3L3_Lecture3_AdversarialDefenses.pdf`
+### 760_vault — COMPSCI 760 (organised **by week**; pitch files at root)
+- Root: `Pitch Idea.md` — ML-driven CPU scheduling optimizer (SimPy simulation, feature extraction, algorithm choice: SJF/RR/SRTF), `Pitch script.md`
+- **`Week 3/`** — adversarial ML: `W3L1 Adversarial Learning.md` + `.pdf`, `W3L1 Pre-lecture Notes.md`, `W3L2 Poisoning Attack.md` + `.pdf`, `W3L3.md`, `W3L3 Adversarial Defenses.pdf`
+- **`Week 4/`** — `W4L1.md`, `W4L1-2 SSL.pdf`
+- `Images/` — pasted screenshots
 
 ### Bazzite_vault — Bazzite OS documentation archive (not a course)
 - `Bazzite/raw/` — full Bazzite docs repo: `src/` (Advanced, Gaming, General, Handheld_and_HTPC_edition), `hooks/`, `plugins/`, `utils/`, `macros_tmpls/`, `theme_overrides/`, `mkdocs.yml`, `Justfile`, `pyproject.toml`, `README.md` (~193 md files)
