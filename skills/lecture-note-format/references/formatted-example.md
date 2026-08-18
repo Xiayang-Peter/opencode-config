@@ -1,6 +1,6 @@
 # Formatted Example (Reference)
 
-An excerpt from a fully formatted COMPSCI 760 note (`W4L1-L2 SSL`), demonstrating every rule in the skill applied in context. Use this as the gold-standard pattern.
+A fully formatted COMPSCI 760 lecture note (`W4L1-2 Self-Supervised Learning (SSL)`), demonstrating every rule in the skill applied in context. Use this as the gold-standard pattern — the same rules (headings, bold, highlights, callouts, tables, `---`) apply to reading, meeting, daily, and assignment notes.
 
 ```markdown
 # W4L1-2 Self-Supervised Learning (SSL)
