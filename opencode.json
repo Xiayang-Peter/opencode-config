@@ -26,6 +26,15 @@
         "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
       },
       "enabled": true
+    },
+    "voice": {
+      "type": "local",
+      "command": [
+        "/usr/bin/python3",
+        "-u",
+        "/var/home/peter/whisper-tts-demo/voice_mcp.py"
+      ],
+      "enabled": true
     }
   },
   "plugin": [
@@ -34,7 +43,76 @@
     "@tarquinen/opencode-dcp@latest"
   ],
   "model": "deepseek/deepseek-v4-flash",
+  "experimental": {
+    "mcp_timeout": 900000
+  },
   "provider": {
+    "lmstudio": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LM Studio (Local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:1234/v1",
+        "apiKey": "lm-studio"
+      },
+      "models": {
+        "deepseek/deepseek-r1-0528-qwen3-8b": {
+          "name": "DeepSeek R1 0528 Qwen3 8B (LM Studio)",
+          "limit": {
+            "context": 131072,
+            "output": 16384
+          }
+        },
+        "google/gemma-4-e4b": {
+          "name": "Gemma 4 E4B (LM Studio)",
+          "limit": {
+            "context": 131072,
+            "output": 16384
+          }
+        },
+        "granite-4.0-micro": {
+          "name": "Granite 4.0 Micro (LM Studio)",
+          "limit": {
+            "context": 131072,
+            "output": 16384
+          }
+        },
+        "ibm/granite-4-h-tiny": {
+          "name": "Granite 4 H Tiny (LM Studio)",
+          "limit": {
+            "context": 1048576,
+            "output": 16384
+          }
+        },
+        "qwen/qwen3-1.7b": {
+          "name": "Qwen3 1.7B (LM Studio)",
+          "limit": {
+            "context": 32768,
+            "output": 16384
+          }
+        },
+        "qwen/qwen3-4b-2507": {
+          "name": "Qwen3 4B 2507 (LM Studio)",
+          "limit": {
+            "context": 262144,
+            "output": 16384
+          }
+        },
+        "qwen2.5-coder-0.5b-instruct": {
+          "name": "Qwen2.5 Coder 0.5B (LM Studio)",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        },
+        "qwen_qwen3.5-0.8b": {
+          "name": "Qwen3.5 0.8B (LM Studio)",
+          "limit": {
+            "context": 262144,
+            "output": 16384
+          }
+        }
+      }
+    }
   },
   "permission": {
     "look_at": "deny"
