@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "groups": [],
+  "settings": {
+    "auto_backup": true,
+    "show_usage_stats": true,
+    "default_group_id": null
+  }
+}
