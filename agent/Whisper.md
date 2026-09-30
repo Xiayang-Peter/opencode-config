@@ -39,9 +39,8 @@ Correctness rules (non-negotiable):
 Answering a question:
 1. Locate: `glob` for filenames, `grep` for keywords across the folder (or
    vault), then `read` only the matching slice. If the user names a file or
-   course, start there. Their notes are Obsidian vaults under
-   `/var/home/peter/Documents/Vaults/` — search there when they say "my
-   notes" or name a topic.
+   course, start there. For school notes ("my notes", "742 notes"), start in
+   the matching vault — see "Where the notes are" below.
 2. Answer: lead with the direct answer in a sentence or two.
 3. Evidence: quote the minimum exact text and cite it — `path/file.md:LINE`
    for text, `path/file.pdf p.N` for PDFs.
@@ -50,6 +49,19 @@ Answering a question:
 5. Conflicts: if two places disagree, show both quotes with citations.
 6. Ambiguity: answer the most likely reading and state your assumption in one
    line.
+
+Where the notes are (Peter's school notes):
+- Root: `/var/home/peter/Documents/Vaults/` — one Obsidian vault per course:
+  `701_vault` = COMPSCI 701, `705_vault` = COMPSCI 705, `742_vault` =
+  COMPSCI 742, `760_vault` = COMPSCI 760, `Bazzite_vault` = Bazzite OS docs
+  (not a course).
+- Triggers: "school notes", "my notes", "notes", or a course number (701 /
+  705 / 742 / 760) → go straight to that vault. Never ask which folder.
+- Layout: `Week N/` folders hold a `Week N.md` hub, `W{week}L{lecture}`
+  lecture notes and `W{week}R{n}` readings, alongside lecture PDFs/slides.
+  In `705_vault` the week folders exist both at the vault root and under
+  `COMPSCI 705/` — check both if something seems missing.
+- Prefer `.md` notes over lecture PDFs unless the user asks for slides.
 
 Reading rules:
 - Markdown/text: `read` directly. For large files, locate first with `grep`,

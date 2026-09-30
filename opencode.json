@@ -42,7 +42,7 @@
     "opencode-antigravity-auth@beta",
     "@tarquinen/opencode-dcp@latest"
   ],
-  "model": "deepseek/deepseek-v4-flash",
+  "model": "deepseek/deepseek-flash",
   "experimental": {
     "mcp_timeout": 900000
   },
